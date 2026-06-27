@@ -1,0 +1,133 @@
+﻿site_name: RUC Survival Guide
+site_description: Unofficial student-maintained survival guide for Renmin University of China
+site_url: https://example.github.io/ruc-survival-guide/
+repo_name: ruc-survival-guide
+repo_url: https://github.com/your-name/ruc-survival-guide
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.action.view
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: red
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-name/ruc-survival-guide
+
+nav:
+  - Home: index.md
+  - Guide:
+      - guide/index.md
+      - Freshman: guide/freshman.md
+      - Course Selection: guide/course-selection.md
+      - GPA: guide/gpa.md
+  - Courses:
+      - courses/index.md
+      - Alphabetical:
+          - courses/alphabetical/index.md
+          - A: courses/alphabetical/a.md
+          - B: courses/alphabetical/b.md
+          - C: courses/alphabetical/c.md
+          - D: courses/alphabetical/d.md
+          - E: courses/alphabetical/e.md
+          - F: courses/alphabetical/f.md
+          - G: courses/alphabetical/g.md
+          - H: courses/alphabetical/h.md
+          - I: courses/alphabetical/i.md
+          - J: courses/alphabetical/j.md
+          - K: courses/alphabetical/k.md
+          - L: courses/alphabetical/l.md
+          - M: courses/alphabetical/m.md
+          - N: courses/alphabetical/n.md
+          - O: courses/alphabetical/o.md
+          - P: courses/alphabetical/p.md
+          - Q: courses/alphabetical/q.md
+          - R: courses/alphabetical/r.md
+          - S: courses/alphabetical/s.md
+          - T: courses/alphabetical/t.md
+          - W: courses/alphabetical/w.md
+          - X: courses/alphabetical/x.md
+          - Y: courses/alphabetical/y.md
+          - Z: courses/alphabetical/z.md
+      - By School:
+          - courses/schools/index.md
+          - Xinxi Xueyuan:
+              - Program Design Basics: courses/schools/信息学院/程序设计基础.md
+          - Caizheng Jinrong Xueyuan:
+              - Finance: courses/schools/财政金融学院/金融学.md
+          - Gaoling AI Xueyuan:
+              - Machine Learning: courses/schools/高瓴人工智能学院/机器学习.md
+      - Templates:
+          - Course Page Template: courses/templates/course-page.md
+  - Survival:
+      - survival/index.md
+      - Baoyan: survival/baoyan.md
+      - Abroad: survival/abroad.md
+      - Career: survival/career.md
+      - Research: survival/research.md
+      - Transfer and Minor: survival/transfer-major.md
+  - Life:
+      - life/index.md
+      - Campus Services: life/campus-services.md
+      - Dorm: life/dorm.md
+      - Canteen: life/canteen.md
+      - Library: life/library.md
+  - Resources:
+      - resources/index.md
+      - Policies: resources/policies.md
+      - Links: resources/links.md
+  - Contribute:
+      - contribute/index.md
+      - Course Template: contribute/course-template.md
+      - Resource Template: contribute/resource-template.md
+      - Comments: contribute/comments.md
+      - License: contribute/license.md
+      - Takedown: contribute/takedown.md
+      - Roadmap: contribute/roadmap.md
