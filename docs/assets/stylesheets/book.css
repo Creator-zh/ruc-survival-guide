@@ -1,0 +1,62 @@
+:root {
+  --ruc-book-accent: #9f1d2f;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-bg-color: #1f2328;
+  --md-accent-fg-color: var(--ruc-book-accent);
+  --md-typeset-a-color: var(--ruc-book-accent);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #ff8a9a;
+  --md-typeset-a-color: #ff8a9a;
+}
+
+.md-header {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: none;
+}
+
+.md-tabs {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.8;
+}
+
+.md-typeset h1 {
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.md-typeset h2 {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  padding-top: 1.6rem;
+}
+
+.md-typeset a {
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset blockquote {
+  border-left-color: var(--ruc-book-accent);
+}
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.md-source {
+  font-weight: 500;
+}
+
+.md-footer-meta {
+  background-color: var(--md-default-bg-color);
+}
