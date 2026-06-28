@@ -1,9 +1,11 @@
-﻿site_name: RUC Survival Guide
+site_name: RUC Survival Guide
 site_description: 非官方、学生维护的中国人民大学学习与生存指南
 site_url: https://creator-zh.github.io/ruc-survival-guide/
 repo_name: Creator-zh/ruc-survival-guide
 repo_url: https://github.com/Creator-zh/ruc-survival-guide
 edit_uri: ""
+exclude_docs: |
+  superpowers/**
 
 theme:
   name: material
