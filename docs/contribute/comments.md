@@ -1,12 +1,12 @@
-# 评论与课程体验
+# 评论与讨论
 
-课程页面可以开启 GitHub Discussions + giscus 评论区。
+本站使用 GitHub Discussions + giscus 提供评论区。评论区默认显示在每个页面正文末尾，位置接近原来的“上一页 / 下一页”翻页区域。
 
 ## 评论原则
 
 - 使用 GitHub 账号署名。
-- 可以写具体任课教师、课程体验、给分感受、点名、作业压力和考试风格。
-- 请标注学期、任课教师和个人背景，例如专业、年级、是否跨专业。
+- 课程页面可以写具体任课教师、课程体验、给分感受、点名、作业压力和考试风格。
+- 课程评论建议标注学期、任课教师和个人背景，例如专业、年级、是否跨专业。
 - 不发布人身攻击、隐私信息、未经核实的严重指控。
 
 ## 推荐格式
@@ -20,8 +20,6 @@
 ## giscus 配置
 
 1. 在 GitHub 仓库开启 Discussions。
-2. 创建“课程讨论”分类。
+2. 安装并授权 giscus GitHub App 访问本仓库。
 3. 到 https://giscus.app/zh-CN 生成配置。
-4. 替换 `overrides/partials/comments.html` 中的 `data-repo-id` 和 `data-category-id`。
-5. 在需要评论的课程页 front matter 中设置 `comments: true`。
-
+4. 当前配置使用 `General` 分类，并按页面路径分别关联讨论串。
