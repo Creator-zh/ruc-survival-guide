@@ -1,9 +1,9 @@
 ﻿site_name: RUC Survival Guide
-site_description: Unofficial student-maintained survival guide for Renmin University of China
-site_url: https://example.github.io/ruc-survival-guide/
-repo_name: ruc-survival-guide
-repo_url: https://github.com/your-name/ruc-survival-guide
-edit_uri: edit/main/docs/
+site_description: 非官方、学生维护的中国人民大学学习与生存指南
+site_url: https://creator-zh.github.io/ruc-survival-guide/
+repo_name: Creator-zh/ruc-survival-guide
+repo_url: https://github.com/Creator-zh/ruc-survival-guide
+edit_uri: ""
 
 theme:
   name: material
@@ -15,30 +15,38 @@ theme:
     - navigation.indexes
     - navigation.top
     - navigation.footer
+    - navigation.tracking
     - search.suggest
     - search.highlight
-    - content.action.edit
-    - content.action.view
     - content.tabs.link
   palette:
     - scheme: default
-      primary: red
-      accent: indigo
+      primary: white
+      accent: red
       toggle:
         icon: material/weather-night
-        name: Switch to dark mode
+        name: 切换到深色模式
     - scheme: slate
-      primary: red
-      accent: indigo
+      primary: black
+      accent: red
       toggle:
         icon: material/weather-sunny
-        name: Switch to light mode
+        name: 切换到浅色模式
 
 plugins:
   - search:
       lang:
         - zh
         - en
+  - git-revision-date-localized:
+      enable_creation_date: false
+      type: date
+      timezone: Asia/Shanghai
+      locale: zh
+      fallback_to_build_date: true
+
+extra_css:
+  - assets/stylesheets/book.css
 
 markdown_extensions:
   - admonition
@@ -59,18 +67,36 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-name/ruc-survival-guide
+      link: https://github.com/Creator-zh/ruc-survival-guide
+      name: GitHub
 
 nav:
-  - Home: index.md
-  - Guide:
+  - 首页: index.md
+  - 学习指南:
       - guide/index.md
-      - Freshman: guide/freshman.md
-      - Course Selection: guide/course-selection.md
-      - GPA: guide/gpa.md
-  - Courses:
+      - 新生入门: guide/freshman.md
+      - 选课指南: guide/course-selection.md
+      - GPA 与成绩: guide/gpa.md
+  - 路径选择:
+      - survival/index.md
+      - 保研: survival/baoyan.md
+      - 出国: survival/abroad.md
+      - 就业: survival/career.md
+      - 科研: survival/research.md
+      - 转专业与辅修: survival/transfer-major.md
+  - 校园生活:
+      - life/index.md
+      - 校园服务: life/campus-services.md
+      - 宿舍: life/dorm.md
+      - 食堂: life/canteen.md
+      - 图书馆: life/library.md
+  - 资源索引:
+      - resources/index.md
+      - 政策索引: resources/policies.md
+      - 常用链接: resources/links.md
+  - 课程资料库 ↗:
       - courses/index.md
-      - Alphabetical:
+      - 按首字母:
           - courses/alphabetical/index.md
           - A: courses/alphabetical/a.md
           - B: courses/alphabetical/b.md
@@ -96,38 +122,21 @@ nav:
           - X: courses/alphabetical/x.md
           - Y: courses/alphabetical/y.md
           - Z: courses/alphabetical/z.md
-      - By School:
+      - 按学院:
           - courses/schools/index.md
-          - Xinxi Xueyuan:
-              - Program Design Basics: courses/schools/信息学院/程序设计基础.md
-          - Caizheng Jinrong Xueyuan:
-              - Finance: courses/schools/财政金融学院/金融学.md
-          - Gaoling AI Xueyuan:
-              - Machine Learning: courses/schools/高瓴人工智能学院/机器学习.md
-      - Templates:
-          - Course Page Template: courses/templates/course-page.md
-  - Survival:
-      - survival/index.md
-      - Baoyan: survival/baoyan.md
-      - Abroad: survival/abroad.md
-      - Career: survival/career.md
-      - Research: survival/research.md
-      - Transfer and Minor: survival/transfer-major.md
-  - Life:
-      - life/index.md
-      - Campus Services: life/campus-services.md
-      - Dorm: life/dorm.md
-      - Canteen: life/canteen.md
-      - Library: life/library.md
-  - Resources:
-      - resources/index.md
-      - Policies: resources/policies.md
-      - Links: resources/links.md
-  - Contribute:
+          - 信息学院:
+              - 程序设计基础: courses/schools/信息学院/程序设计基础.md
+          - 财政金融学院:
+              - 金融学: courses/schools/财政金融学院/金融学.md
+          - 高瓴人工智能学院:
+              - 机器学习: courses/schools/高瓴人工智能学院/机器学习.md
+      - 模板:
+          - 课程页面模板: courses/templates/course-page.md
+  - 参与贡献:
       - contribute/index.md
-      - Course Template: contribute/course-template.md
-      - Resource Template: contribute/resource-template.md
-      - Comments: contribute/comments.md
-      - License: contribute/license.md
-      - Takedown: contribute/takedown.md
-      - Roadmap: contribute/roadmap.md
+      - 课程资料模板: contribute/course-template.md
+      - 资源模板: contribute/resource-template.md
+      - 评论规则: contribute/comments.md
+      - 授权说明: contribute/license.md
+      - 下架请求: contribute/takedown.md
+      - 路线图: contribute/roadmap.md
